@@ -1,0 +1,59 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 38px 0;
+    }
+    &__logo {
+        width: 83px;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        border: 2px solid #3159E9;
+        box-sizing: border-box;
+        border-radius: 45px;
+        width: 223px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 32px;
+        &:hover {
+            background: #3159E9;
+            color: #fff;
+        }
+    }
+    &__phone {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        &:hover {
+            color: #3159E9;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    &__item {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 150%;
+        &:hover {
+            color: #3159E9;
+        }
+        &:not(:last-child) {
+            margin-right: 117px;
+        }
+    }
+}
