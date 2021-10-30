@@ -21,15 +21,34 @@
                 <a href="index.html" class="header__logo">
                     <img src="img/logo.png" alt="">
                 </a>
-                <div class="nav">
-                    <a href="" class="nav__item">Услуги</a>
-                    <a href="" class="nav__item">О нас</a>
-                    <a href="" class="nav__item">Контакты</a>
-                </div>
+
                 <div class="header__right">
-                    <a href="tel:+73912152010" class="header__phone">+7(391) 215‑20‑10</a>
-                    <button class="header__btn">Заказать звонок</button>
+                    <div class="header__right-inner">
+                        <div class="nav">
+                            <div class="nav__item nav-dropdown">
+                                <div class="nav-dropdown-show"><span>Услуги</span></div>
+                                <div class="nav-dropdown-hidden">
+                                    <a href="">Проектирование</a>
+                                    <a href="">Интеллектуальные системы</a>
+                                    <a href="">Аналитика </a>
+                                    <a href="">Системы управления </a>
+                                    <a href="">Светодизайн</a>
+                                    <a href="">Светодиодные светильники</a>
+                                    <a href="">Аналитика</a>
+                                </div>
+                            </div>
+                            <a href="" class="nav__item">О нас</a>
+                            <a href="" class="nav__item">Контакты</a>
+                        </div>
+                        <a href="tel:+73912152010" class="header__phone">+7(391) 215‑20‑10</a>
+                        <button class="header__btn">Заказать звонок</button>
+                    </div>
                 </div>
+                <button class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -195,55 +214,69 @@
                     </div>
                 </div>
             </div>
-            <div class="why__items">
-                <div class="why__item">
-                    <div class="why__item-img">
-                        <img src="img/why1.jpg" alt="">
-                    </div>
-                    <div class="why__item-content">
-                        <span class="why__item-content-line"></span>
-                        <div class="why__item-title">Мы разобрались <br> в рынке за вас</div>
-                        <div class="why__item-desc">У нас в портфеле более 130 объектов, но для вас мы сделаем индивидуальную подборку только с подходящими вариантами.</div>
-                    </div>
-                    <span class="why__item-line"></span>
-                    <span class="why__item-line-bottom"></span>
-                </div>
-                <div class="why__item">
-                    <div class="why__item-img">
-                        <img src="img/why2.jpg" alt="">
-                    </div>
-                    <div class="why__item-content">
-                        <span class="why__item-content-line"></span>
-                        <div class="why__item-title">Расскажем про все <br> плюсы и минусы</div>
-                        <div class="why__item-desc">Мы не хотим продать вам какой-то конкретный объект, наша цель — найти «ту самую» квартиру для вас и остаться партнерами на долгие годы.
+            <div class="why__slider">
+                <div class='swiper-container'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide'>
+                            <div class="why__item">
+                                <div class="why__item-img">
+                                    <img src="img/why1.jpg" alt="">
+                                </div>
+                                <div class="why__item-content">
+                                    <span class="why__item-content-line"></span>
+                                    <div class="why__item-title">Мы разобрались <br> в рынке за вас</div>
+                                    <div class="why__item-desc">У нас в портфеле более 130 объектов, но для вас мы сделаем индивидуальную подборку только с подходящими вариантами.</div>
+                                </div>
+                                <span class="why__item-line"></span>
+                                <span class="why__item-line-bottom"></span>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class="why__item">
+                                <div class="why__item-img">
+                                    <img src="img/why2.jpg" alt="">
+                                </div>
+                                <div class="why__item-content">
+                                    <span class="why__item-content-line"></span>
+                                    <div class="why__item-title">Расскажем про все <br> плюсы и минусы</div>
+                                    <div class="why__item-desc">Мы не хотим продать вам какой-то конкретный объект, наша цель — найти «ту самую» квартиру для вас и остаться партнерами на долгие годы.
+                                    </div>
+                                </div>
+                                <span class="why__item-line-bottom"></span>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class="why__item why__item--reverse">
+                                <div class="why__item-img">
+                                    <img src="img/why3.jpg" alt="">
+                                </div>
+                                <div class="why__item-content">
+                                    <span class="why__item-content-line"></span>
+                                    <div class="why__item-title">Мы — визионеры</div>
+                                    <div class="why__item-desc">Не только расскажем обо всем актуальном на рынке, но и спрогнозируем, как изменится стоимость жилья и ваш район через несколько лет.</div>
+                                </div>
+                                <span class="why__item-line"></span>
+                                <span class="why__item-line-bottom"></span>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class="why__item why__item--reverse">
+                                <div class="why__item-img">
+                                    <img src="img/why4.jpg" alt="">
+                                </div>
+                                <div class="why__item-content">
+                                    <span class="why__item-content-line"></span>
+                                    <div class="why__item-title">Ответим на <br> любой ваш вопрос</div>
+                                    <div class="why__item-desc">Будь то юридическое оформление сделки, дизайн интерьера или технические особенности постройки — наши брокеры расскажут обо всем и дадут рекомендации.
+                                    </div>
+                                </div>
+                                <span class="why__item-line-bottom"></span>
+                            </div>
                         </div>
                     </div>
-                    <span class="why__item-line-bottom"></span>
+
                 </div>
-                <div class="why__item why__item--reverse">
-                    <div class="why__item-img">
-                        <img src="img/why3.jpg" alt="">
-                    </div>
-                    <div class="why__item-content">
-                        <span class="why__item-content-line"></span>
-                        <div class="why__item-title">Мы — визионеры</div>
-                        <div class="why__item-desc">Не только расскажем обо всем актуальном на рынке, но и спрогнозируем, как изменится стоимость жилья и ваш район через несколько лет.</div>
-                    </div>
-                    <span class="why__item-line"></span>
-                    <span class="why__item-line-bottom"></span>
-                </div>
-                <div class="why__item why__item--reverse">
-                    <div class="why__item-img">
-                        <img src="img/why4.jpg" alt="">
-                    </div>
-                    <div class="why__item-content">
-                        <span class="why__item-content-line"></span>
-                        <div class="why__item-title">Ответим на <br> любой ваш вопрос</div>
-                        <div class="why__item-desc">Будь то юридическое оформление сделки, дизайн интерьера или технические особенности постройки — наши брокеры расскажут обо всем и дадут рекомендации.
-                        </div>
-                    </div>
-                    <span class="why__item-line-bottom"></span>
-                </div>
+                <div class='swiper-pagination'></div>
             </div>
         </div>
     </section>
@@ -323,6 +356,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class='swiper-pagination'></div>
                     </div>
                 </div>
                 <div class="team__bottom">
